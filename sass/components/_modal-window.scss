@@ -14,6 +14,13 @@
     visibility var(--duration) var(--timing-function);
 }
 
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.2);
   visibility: visible;

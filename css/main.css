@@ -1,3 +1,4 @@
+@import url(../images/hero-mob@2x.jpg);
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -522,6 +523,10 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .spacing {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .site-nav {
     display: none;
   }
@@ -592,7 +597,7 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .contact_tel {
+  .contact__item:not(:last-child) {
     margin-bottom: 10px;
   }
 }
@@ -673,7 +678,7 @@ textarea {
 .hero__overlay {
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mob.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -994,9 +999,6 @@ textarea {
 
 footer {
   background-color: #2f303a;
-}
-
-.footer-section__container {
   padding-top: 60px;
   padding-bottom: 60px;
 }

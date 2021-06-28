@@ -108,7 +108,6 @@ footer {
 }
 
 .subscribe__input {
-  width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -122,6 +121,18 @@ footer {
     line-height: 1.25;
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .subscribe__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
   }
 }
 

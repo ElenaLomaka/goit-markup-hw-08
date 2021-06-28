@@ -29,11 +29,11 @@
 @media screen and (min-width: 1200px) {
   .team {
     display: flex;
+    margin: -15px;
   }
   .team__item {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    margin: 15px;
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
